@@ -16,6 +16,6 @@ WORKDIR /app
 
 COPY --from=build /build/main ./main
 
-ENV PORT=8000
+ENV PORT=9000
 
 ENTRYPOINT ["/app/main"]

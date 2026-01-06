@@ -27,7 +27,7 @@ func main() {
 	mux := api.NewMux()
 	topzApi.WithHandlers(mux)
 
-	// default port=8000
+	// default port=9000
 	server.CreateAndrunServer(ctx, mux, fmt.Sprintf(":%s", os.Getenv("PORT")), errChan, wg)
 
 	wg.Wait()
